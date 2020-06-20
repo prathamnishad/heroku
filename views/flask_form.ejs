@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grind Hard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
+</head>
+
+<body>
+    <form class="ui form segment" action="/flask_result" method="POST">
+        <div class="ui field segment"><label for="flask[age]">Age</label><input type="text" name="flask[age]"
+                placeholder="eg. 85" /></div>
+        <div class="ui field segment"><label for="flask[sex]">Sex</label><input type="text" name="flask[sex]"
+                placeholder="male or female" /></div>
+        <div class="ui field segment"><label for="flask[embarked]">Embarked</label><input type="text"
+                name="flask[embarked]" placeholder="S or C" /></div>
+        <input class="ui button" type="submit" value="Submit" />
+    </form>
+</body>
